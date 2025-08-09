@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "D5LP5A3BV8.com.starchartai.app",
+        "paths": ["/StarChartai/app/*"]
+      }
+    ]
+  }
+}
