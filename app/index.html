@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星盘AI - AI智能分析，了解自我特质</title>
+    <meta name="description" content="星盘AI是一款基于人工智能的个人特质分析应用，为您提供个性化的生活建议和成长指导。">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ff6b6b;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Features */
+        .features {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #333;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 15px;
+            background: #f8f9fa;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* About */
+        .about {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .about h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #333;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .about-image {
+            text-align: center;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 15px;
+            color: #ff6b6b;
+        }
+
+        .footer-section p, .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            color: #ff6b6b;
+        }
+
+        .copyright {
+            border-top: 1px solid #555;
+            padding-top: 20px;
+            color: #999;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="hero">
+        <div class="container">
+            <h1>🌟 星盘AI</h1>
+            <p>AI智能分析，了解自我特质</p>
+            <p>基于人工智能的个人特质分析，为您提供个性化的生活建议和成长指导</p>
+            <a href="#download" class="cta-button">立即体验</a>
+        </div>
+    </header>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <h2>🔮 核心功能</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI智能分析</h3>
+                    <p>基于现代AI技术与数据分析，为您提供精准的个人特质分析与解读，帮助您更好地了解自己。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>全方位个人分析</h3>
+                    <p>深入分析您的性格特质、职业发展、人际关系和生活态度，提供全面的个人成长指导。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💡</div>
+                    <h3>个性化生活建议</h3>
+                    <p>基于个人特质提供专业建议，推荐适合的生活方式与习惯，助力您的生活品质提升。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>专业成长指导</h3>
+                    <p>深入分析个人优势与潜力，解读人生不同阶段的发展重点，提供实用的生活指导。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>隐私保护</h3>
+                    <p>严格保护用户个人信息安全，所有数据加密存储，确保您的隐私得到充分保护。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>快速分析</h3>
+                    <p>简洁优雅的界面设计，操作简单直观，快速生成分析报告，无需等待。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about">
+        <div class="container">
+            <h2>关于星盘AI</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>星盘AI是一款基于人工智能的个人特质分析应用，致力于帮助用户更好地了解自我，规划人生方向。</p>
+                    <p>我们结合现代AI技术与专业分析理论，为用户提供科学、准确、个性化的分析报告和生活建议。</p>
+                    <p>无论您是希望了解自己的性格特质，还是寻求职业发展指导，星盘AI都将成为您最贴心的生活顾问。</p>
+                    <p>我们的使命是让每个人都能通过科技的力量，更好地认识自己，实现个人成长。</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/500x400/667eea/ffffff?text=星盘AI" alt="星盘AI应用界面">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>联系我们</h3>
+                    <p>邮箱：179794975@qq.com</p>
+                    <p>工作时间：周一至周五 9:00-18:00</p>
+                </div>
+                <div class="footer-section">
+                    <h3>技术支持</h3>
+                    <p><a href="#support">常见问题</a></p>
+                    <p><a href="#help">使用指南</a></p>
+                    <p><a href="#contact">联系客服</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>法律信息</h3>
+                    <p><a href="#privacy">隐私政策</a></p>
+                    <p><a href="#terms">服务条款</a></p>
+                    <p><a href="#cookies">Cookie政策</a></p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 星盘AI. 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
