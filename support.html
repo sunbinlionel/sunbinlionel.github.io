@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技术支持 - 星盘AI</title>
+    <meta name="description" content="星盘AI技术支持中心，为您提供使用帮助和常见问题解答。">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Navigation */
+        .nav {
+            background: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .nav a:hover {
+            color: #667eea;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 60px 0;
+        }
+
+        .support-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .support-section {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .support-section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .faq-answer {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .contact-info {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .contact-info h2 {
+            color: #667eea;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+        }
+
+        .contact-method {
+            margin-bottom: 20px;
+        }
+
+        .contact-method h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .contact-method p {
+            color: #666;
+        }
+
+        .contact-method a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .contact-method a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 15px;
+            color: #ff6b6b;
+        }
+
+        .footer-section p, .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            color: #ff6b6b;
+        }
+
+        .copyright {
+            border-top: 1px solid #555;
+            padding-top: 20px;
+            color: #999;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .support-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav .container {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>🔧 技术支持中心</h1>
+            <p>为您提供专业的技术支持和帮助</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <a href="index.html">← 返回首页</a>
+            <a href="mailto:179794975@qq.com">联系客服</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="support-grid">
+                <!-- FAQ Section -->
+                <div class="support-section">
+                    <h2>❓ 常见问题</h2>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Q: 如何使用星盘AI进行分析？</div>
+                        <div class="faq-answer">
+                            A: 打开应用后，按照提示输入您的个人信息，包括性别、出生日期、出生时间和出生地区。系统将自动生成个性化的分析报告。
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">Q: 分析报告需要多长时间生成？</div>
+                        <div class="faq-answer">
+                            A: 基础分析报告通常在1-2分钟内生成。深度分析报告可能需要3-5分钟，具体时间取决于服务器负载情况。
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">Q: 我的个人信息安全吗？</div>
+                        <div class="faq-answer">
+                            A: 我们严格保护用户隐私，所有个人信息都经过加密存储，不会泄露给第三方。您可以随时删除账户和相关数据。
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">Q: 支持哪些支付方式？</div>
+                        <div class="faq-answer">
+                            A: 我们支持苹果内购、微信支付和支付宝支付等多种支付方式，确保支付安全便捷。
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">Q: 如何获得退款？</div>
+                        <div class="faq-answer">
+                            A: 如果您对服务不满意，可以在购买后7天内申请退款。请通过客服邮箱联系我们，我们会尽快处理您的退款申请。
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">Q: 应用支持哪些设备？</div>
+                        <div class="faq-answer">
+                            A: 星盘AI支持iPhone和iPad设备，需要iOS 15.0或更高版本。我们正在开发Android版本，敬请期待。
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Help Section -->
+                <div class="support-section">
+                    <h2>📖 使用指南</h2>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">📱 首次使用</div>
+                        <div class="faq-answer">
+                            1. 下载并安装星盘AI应用<br>
+                            2. 打开应用，点击"开始分析"<br>
+                            3. 按照提示输入个人信息<br>
+                            4. 等待分析报告生成
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">🔍 查看分析结果</div>
+                        <div class="faq-answer">
+                            1. 在分析结果页面查看基础报告<br>
+                            2. 如需详细分析，点击"解锁完整分析"<br>
+                            3. 选择支付方式完成购买<br>
+                            4. 查看完整的个性化分析报告
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">💡 获取生活建议</div>
+                        <div class="faq-answer">
+                            1. 在分析报告中查看个性化建议<br>
+                            2. 浏览推荐的生活方式调整<br>
+                            3. 查看适合的商品推荐<br>
+                            4. 根据建议调整生活习惯
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">⚙️ 账户管理</div>
+                        <div class="faq-answer">
+                            1. 在用户中心查看历史分析<br>
+                            2. 管理个人信息和隐私设置<br>
+                            3. 查看购买记录和订单状态<br>
+                            4. 联系客服获取帮助
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="contact-info">
+                <h2>📞 联系我们</h2>
+                
+                <div class="contact-method">
+                    <h3>📧 客服邮箱</h3>
+                    <p><a href="179794975@qq.com">179794975@qq.com</a></p>
+                    <p>我们会在24小时内回复您的邮件</p>
+                </div>
+
+                <div class="contact-method">
+                    <h3>⏰ 工作时间</h3>
+                    <p>周一至周五：9:00 - 18:00</p>
+                    <p>周六至周日：10:00 - 16:00</p>
+                </div>
+
+                <div class="contact-method">
+                    <h3>🚀 紧急问题</h3>
+                    <p>如遇紧急技术问题，请发送邮件至：</p>
+                    <p><a href="mailto:179794975@qq.com、">179794975@qq.com</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>联系我们</h3>
+                    <p>邮箱：179794975@qq.com</p>
+                    <p>工作时间：周一至周五 9:00-18:00</p>
+                </div>
+                <div class="footer-section">
+                    <h3>技术支持</h3>
+                    <p><a href="#support">常见问题</a></p>
+                    <p><a href="#help">使用指南</a></p>
+                    <p><a href="#contact">联系客服</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>法律信息</h3>
+                    <p><a href="#privacy">隐私政策</a></p>
+                    <p><a href="#terms">服务条款</a></p>
+                    <p><a href="#cookies">Cookie政策</a></p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 星盘AI. 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
